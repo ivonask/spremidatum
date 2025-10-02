@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Spremi datum — Veljača 2026</title>
+  <title>Ivona i Nikola — Veljača 2026</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Festive fonts -->
@@ -107,7 +107,7 @@
     }
 
     .card{
-      width: min(760px, 94vw);
+      width: min(760px, 76%);
       background: #fff;
       border: 2px solid var(--border);
       border-radius: 22px;
@@ -134,11 +134,9 @@
 
     .inner{ position: relative; z-index: 1; }
 
-    /* Top bunting */
     .bunting{
       position: absolute;
       top: 40px;
-      left: -2%;
       width: 100%;
       height: auto;
       overflow: visible;
@@ -153,6 +151,18 @@
       text-align: center;
       margin-top: 26px;
     }
+    a{
+      color: var(--ink);
+      text-decoration: none;
+      border-bottom: 1px dashed var(--border);
+      transition: color .3s, border-color .3s;
+    }
+    a:hover, a:focus{
+      color: var(--violet);
+      border-color: var(--violet);
+      outline: none;
+    }
+    a:focus{ box-shadow: 0 2px 0 var(--violet); }
 
     h1{
       font-family: "Lobster", "Playfair Display", Georgia, serif;
@@ -264,9 +274,6 @@
     }
 
         .fade-rotator {
-      /* position: relative;
-      width: min(90vw, 800px);
-      aspect-ratio: 16 / 9; */
       margin: 2rem auto;
       overflow: hidden;
     }
@@ -374,11 +381,15 @@
 
       <section class="details" aria-label="Event details">
         <div class="date">Subota, 7. veljače 2026.</div>
-        <div class="time"><strong style="color: var(--red)">12:00</strong> · Matični ured Kastav · Trg Svete Lucije 1</div>
+        <div class="time"><strong style="color: var(--red)">12:00</strong> · Matični ured Kastav ·
+          <a href="https://maps.app.goo.gl/9QZ7GusFpMoJfXiEA">Trg Svete Lucije 1</a></div>
 
         <div class="venue">Restoran Ronjgi</div>
-        <div class="location"><strong style="color: var(--teal)">14:00</strong> · Viškovo Saršoni, 51216</div>
+        <div class="location"><strong style="color: var(--teal)">14:00</strong> · Viškovo,
+          <a href="https://maps.app.goo.gl/CHC1GW8ZwwBL7vy28">Saršoni, 51216</a></div>
 
+
+        <div class="time"><strong style="color: var(--gold)">00:00</strong> · Ponoćno jelo i fajrunt</div>
         <!-- <div class="reception">Radujemo se vašem dolasku i potičemo maškaranu obleku!</div> -->
       </section>
 
