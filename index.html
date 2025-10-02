@@ -107,6 +107,8 @@
     }
 
     .card{
+      /* TODO: add height under which the card becomes scrollable */
+      height: min(82%, 2000px);
       width: min(760px, 76%);
       background: #fff;
       border: 2px solid var(--border);
@@ -163,6 +165,9 @@
       outline: none;
     }
     a:focus{ box-shadow: 0 2px 0 var(--violet); }
+    a:active{ color: var(--pink);
+      border-color: var(--pink);
+    }
 
     h1{
       font-family: "Lobster", "Playfair Display", Georgia, serif;
