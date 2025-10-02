@@ -107,8 +107,6 @@
     }
 
     .card{
-      /* TODO: add height under which the card becomes scrollable */
-      height: min(82%, 2000px);
       width: min(760px, 76%);
       background: #fff;
       border: 2px solid var(--border);
@@ -320,7 +318,8 @@
       .card{
         box-shadow: none;
         border: 0;
-        padding: 34px 30px 24px;
+        padding-top: 100px;
+        height: min(100vh, 1120px);
       }
       .balloon{ display: none !important; }
       .bunting{ transform: translateY(-30%); }
